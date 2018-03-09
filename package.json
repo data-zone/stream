@@ -1,0 +1,26 @@
+{
+  "name": "@datav/stream",
+  "version": "1.0.0",
+  "description": "data flow stream",
+  "main": "lib/index.js",
+  "author": "Zero (uniquecolesmith@gmail.com)",
+  "scripts": {
+    "build": "rimraf lib && babel src --out-dir lib",
+    "test": "cross-env NODE_ENV=test nyc mocha test/*.spec.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "unfetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "mocha": "^5.0.4",
+    "nyc": "^11.4.1"
+  },
+  "files": [
+    "lib"
+  ]
+}
