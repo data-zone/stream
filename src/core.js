@@ -1,5 +1,7 @@
 import fetch from 'unfetch';
 
+import * as utils from './utils';
+
 const TRANSFORM = data => data;
 
 export default class StreamCore {
@@ -115,7 +117,7 @@ export default class StreamCore {
   }
 
   off() {
-    clearInterval(this.intervalFn);
+    utils.clearInterval(this.intervalFn);
 
     return this;
   }

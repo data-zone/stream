@@ -1,5 +1,6 @@
 {
-  "name": "@datav/stream",
+  "name": "@datazone/stream",
+  "private": false,
   "version": "1.0.0",
   "description": "data flow stream",
   "main": "lib/index.js",
